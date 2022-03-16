@@ -44,4 +44,11 @@ public class TestGreeter {
 
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
+
+  @Test
+  public void greetShouldIncludeGreetingMessage() {
+    String someone = "This is the modification to the branch main instead of master in the project Jenkins";
+
+    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
+  }
 }
